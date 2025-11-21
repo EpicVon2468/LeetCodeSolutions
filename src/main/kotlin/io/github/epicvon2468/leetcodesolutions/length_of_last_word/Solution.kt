@@ -3,7 +3,7 @@ package io.github.epicvon2468.leetcodesolutions.length_of_last_word
 // "42.35MB | Beats 52.46%"
 
 /**
- * [Problem](https://leetcode.com/problems/powx-n/)
+ * [Problem](https://leetcode.com/problems/length-of-last-word/)
  */
 class Solution {
 
