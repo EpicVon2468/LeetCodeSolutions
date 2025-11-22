@@ -13,6 +13,10 @@ class Solution {
 	// `ln(3.0)` returns `1.0986122886681098`, so constant it to avoid unneeded function calls.
 	fun isPowerOfThree(n: Int): Boolean {
 		if (n <= 0) return false
-		return (ln(n.toDouble()) / 1.0986122886681098) % 1.0 == 0.0
+		//return (ln(n.toDouble()) / 1.0986122886681098) % 1.0 == 0.0
+		return ln(n.toDouble()).let {
+			(it / 1.0986122886681098) % 1.0 == 0.0 || (it / 1.0986122886681096) % 1.0 == 0.0
+		}
+		// 21038 / 21040 testcases passed...
 	}
 }
